@@ -1,4 +1,4 @@
-const notFount = (req, res) =>
-  res.status(404).send(`Route not found: ${req.url}`);
+const notFountMiddleware = (req, res) =>
+  res.status(404).send(`Route does not exist: ${req.url}`);
 
-module.exports = { notFount };
+module.exports = { notFountMiddleware };
